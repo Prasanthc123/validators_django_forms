@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <center>
+        <table border="2px">
+            <tr>
+                <th>sname</th>
+                <th>sprincipal</th>
+                <th>slocation</th>
+                <th>semail</th>
+                <th>remail</th>
+            </tr>
+        {% for so in School %}
+        <tr>
+            <td>{{so.sname}}</td>
+            <td>{{so.sprincipal}}</td>
+            <td>{{so.slocation}}</td>
+            <td>{{so.semail}}</td>
+            <td>{{so.remail}}</td>
+        </tr>
+        {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
